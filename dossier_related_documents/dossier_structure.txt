@@ -1,0 +1,20 @@
+This is the structure of the Dossier .zip file.
+
+ocr-in-jetson-nano/
+├── benchmarks/
+├── docs/
+├── easy_ocr/
+├── dossier_related_documents/
+├── gpu_inference_RTX3090/
+├── logs/
+├── paddle_ocr/
+├── process_logs.ipynb
+
+- ``docs/``: README file images.
+- ``benchmarks/``: Contains scripts for benchmarking OCR model performance.
+- ``easy_ocr/``: Code and configuration specific to the EasyOCR model.
+- ``paddle_ocr/``: Code and configuration specific to the PaddleOCR model.
+- ``gpu_inference_RTX3090/``: Scripts for OCR inference on an NVIDIA RTX 3090 GPU.
+- ``process_logs.ipynb``: Jupyter notebook for processing and analyzing log files.
+- ``logs/``: Stores log files from experiments, training, and inference runs (empty).
+- ``follow_up_documents/``: Documents regarding follow-up and reports for TFG assignments.

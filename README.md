@@ -5,6 +5,29 @@
 
 > :warning: **It is recommended to, at least, use a 32GB SD card for installing Jetson Nano's OS.** Personally, if it is possible I recommend you to use a 64GB SD card. This way you will be able to download and test several models as well as increasing the SWAP memory, which will be mandatory for many acceleration techniques and library installations.  
 
+## 0. Repository structure
+```
+ocr-in-jetson-nano/
+├── benchmarks/
+├── docs/
+├── easy_ocr/
+├── dossier_related_documents/
+├── gpu_inference_RTX3090/
+├── logs/
+├── paddle_ocr/
+├── process_logs.ipynb
+```
+
+- ``docs/``: README file images.
+- ``benchmarks/``: Contains scripts for benchmarking OCR model performance.
+- ``easy_ocr/``: Code and configuration specific to the EasyOCR model.
+- ``paddle_ocr/``: Code and configuration specific to the PaddleOCR model.
+- ``gpu_inference_RTX3090/``: Scripts for OCR inference on an NVIDIA RTX 3090 GPU.
+- ``process_logs.ipynb``: Jupyter notebook for processing and analyzing log files.
+- ``logs/``: Stores log files from experiments, training, and inference runs (empty).
+- ``follow_up_documents/``: Documents regarding follow-up and reports for TFG assignments.
+
+
 ## 1. JetPack installation
 The first task to do is installing the JetPack SDK for Jetson Nano. To do so, follow [NVIDIA's "Getting Started" official site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit). Latest availbale version at this repository publication is JetPack 4.6.6. Once you have installed the OS, make sure that you can connect to the Jetson Nano and it is functional.
 
