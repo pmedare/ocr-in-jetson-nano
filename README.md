@@ -77,6 +77,9 @@ Output should be **True** and torchvisions version 0.9.0.
 OpenCV is the core library for many image transformation and image handling in Python. It can be installed with CUDA support which could help accelerating some tasks. To install it, follow this tutorial from [make2explore/Tutorial-OpenCV-on-JetsonNano-with-CUDA-support](https://github.com/make2explore/Tutorial-OpenCV-on-JetsonNano-with-CUDA-support/tree/main). The tutorial recommends you to revert the SWAP memory increase. 
 :Warning: If you have enough disk storage and are planning to create TensorRT engines with low quantization values, I recommend keeping the SWAP memory modification.
 
+#### 2.1.4. Torch2Trt
+Torch2trt is a package that simplifies TensorRT engine optimization to PyTorch existing code. To install it, follow its tutorial from the official GitHub repository [NVIDIA-AI-IOT/torch2trt](https://github.com/NVIDIA-AI-IOT/torch2trt).
+
 ### 2.2. Other core packages that will be needed.
 1. Install **jtop**. This package will allow you to display in real time how are the Jetson Nano resources being used. There is an information window that will give you information about installed packages and other OS relevant data. Install with `sudo -H pip3 install -U jetson-stats`.
 
