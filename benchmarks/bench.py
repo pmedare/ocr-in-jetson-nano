@@ -3,7 +3,6 @@ from torchvision.models.alexnet import alexnet
 from torchvision.models import squeezenet1_0, squeezenet1_1
 from torchvision.models import resnet18, resnet34, resnet50, resnet101, resnet152
 from torchvision.models import densenet121, densenet169, densenet201, densenet161
-from torchvision.models import vgg11, vgg13, vgg16, vgg19
 from torch2trt import torch2trt
 import time
 
@@ -11,7 +10,7 @@ num_inferences = 50
 num_warmup = 20
 
 # Create and prepare model
-model = vgg11(pretrained=True).eval().cuda()
+model = alexnet(pretrained=True).eval().cuda()
 x = torch.ones((1, 3, 224, 224)).cuda()
 
 # Convert to TensorRT
