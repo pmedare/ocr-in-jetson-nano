@@ -1,4 +1,4 @@
-# OCR implementation in Jetson Nano
+# OCR implementation on Jetson Nano
 > This repository contains the source code and tutorial of the OCR models that are going to be used and benchmarked in Jetson Nano.
 
 ![Jetson Nano processor](docs/jetson_nano_image.png)
